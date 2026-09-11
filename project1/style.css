@@ -1,0 +1,258 @@
+*{
+padding: 0;
+margin: 0;
+color: white;
+font-family: serif;
+}
+
+body{
+    background-color: #001;
+    display: flex;
+}
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+
+.menu{
+background-color: rgb(25, 41, 41);
+width: 60px;
+height: 100vh;
+padding: 20px;
+overflow: hidden;
+transition: .5s;
+}
+
+.menu:hover{
+    width: 260px;
+}
+
+
+
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+      display: block;
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 80px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      transition: .5s;
+}
+
+ul li a:hover, .active, .data-info .box:hover, td:hover{
+    background-color: #ffffff55;
+}
+
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a{
+    background-color: darkcyan;
+}
+
+.dashboard a{
+    background-color: darkcyan ;
+}
+
+ul li a i{
+    font-size: 30px;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info{
+background-color: darkcyan;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 8px;
+margin: 10px 0;
+width: 100%;
+
+}
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color:rgb(25, 41,41) ;
+    height: 150px;
+    flex-basis: 45%;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.data-info .box i{
+    font-size: 40px;
+}
+
+.data-info .box .data{
+    text-align: center;
+}
+
+.data-info .box .data span{
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+
+td, th{
+     background-color:rgb(25, 41, 41) ;
+     height: 40px;
+     border-radius: 8px;
+}
+
+th{
+    background-color: darkcyan;
+}
+
+.price, .count{
+     padding: 6px;
+     border-radius: 6px;
+
+}
+
+.price{
+    background-color: green;
+}
+
+.count{
+    background-color: darkgoldenrod;
+}
+
+.chart {
+    height: 100%;
+    background-color: rgb(25, 41, 41);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.bar {
+    width: 70px;
+    background-color: darkcyan;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+.bar span {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    white-space: nowrap;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.post {
+    background-color: rgb(25, 41, 41);
+    padding: 25px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    transition: 0.5s;
+}
+
+.post:hover {
+    background-color: #ffffff55;
+}
+
+.post i {
+    font-size: 35px;
+}
+
+.post h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.post p {
+    font-size: 16px;
+}
+
+.create-post {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.create-post:hover {
+    background-color: #ffffff55;
+}
+
+.post small {
+    display: block;
+    margin-top: 12px;
+    color: #ccc;
+}
